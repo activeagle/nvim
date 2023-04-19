@@ -2,3 +2,5 @@
 # after/
 # lua/
 # plugin/
+plugin/packer_compiled.lua
+
