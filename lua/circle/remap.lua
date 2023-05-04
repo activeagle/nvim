@@ -20,6 +20,7 @@ end)
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set("n", "<leader>e", vim.cmd.NvimTreeToggle)
 
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
@@ -47,4 +48,16 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
+
+-- | -- Copy to clipboard
+-- | vim.keymap.set("n", "<leader>y", "+y")
+-- | vim.keymap.set("n", "<leader>Y", "+yg_")
+-- | vim.keymap.set("n", "<leader>y", "+y")
+-- | vim.keymap.set("n", "<leader>yy", "+yy")
+-- | 
+-- | -- Paste from clipboard
+-- | vim.keymap.set("n", "<leader>p", "+p")
+-- | vim.keymap.set("n", "<leader>P", "+P")
+-- | vim.keymap.set("n", "<leader>p", "+p")
+-- | vim.keymap.set("n", "<leader>P", "+P")
 end)
