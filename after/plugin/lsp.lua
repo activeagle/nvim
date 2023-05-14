@@ -3,8 +3,10 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'tsserver',
-  'rust_analyzer',
+ 'tsserver', --> javascript
+  'rust_analyzer', --> rust
+  'gopls', --> go
+  'pyright', --> python
 })
 
 -- Fix Undefined global 'vim'
@@ -60,4 +62,4 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-lsp.setup()
+--> sp.setup()
