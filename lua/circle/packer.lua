@@ -26,12 +26,15 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToogle)
 -- themes 
     use("catppuccin/nvim", {as = "catppuccin"})
     use('romgrk/barbar.nvim', {requires ='nvim-tree/nvim-web-devicons'})
+
 -- productivity
     use("nvim-lualine/lualine.nvim")
     use("nvim-tree/nvim-tree.lua", {requires = "nvim-tree/nvim-web-devicons"})
     use('nvim-tree/nvim-web-devicons')
+
 -- file type
     use('theprimeagen/harpoon')
+
 -- development
     use("lewis6991/gitsigns.nvim")
     use('nvim-treesitter/playground')

@@ -1,4 +1,9 @@
 local lsp = require("lsp-zero")
+--> gini
+-->local pyright_opts = require("custom.lua.pyright.lua")
+--> error karena belum ada pyright.lua di foleder custom/lua/
+--> I thought it will use the pyrright but it show error :)
+-- ==> local lsp = require("pyright")
 
 lsp.preset("recommended")
 
