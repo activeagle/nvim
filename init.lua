@@ -1,3 +1,2 @@
 require("circle")
-autocmd BufRead,BufNewFile ~/.config/nvim/**/*.lua luafile %
-
+-- autocmd BufRead,BufNewFile ~/.config/nvim/**/*.lua luafile %
