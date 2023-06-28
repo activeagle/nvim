@@ -23,6 +23,20 @@ lsp.configure('lua-language-server', {
 })
 
 
+-- local config = require("lsp")
+
+-- local on_attach = config.on_attach
+-- local capabilities = config.capabilities
+
+-- local lsp = require("lsp")
+
+-- lsp.pyright.setup({
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   filetypes = {"python"},
+-- })
+
+
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
