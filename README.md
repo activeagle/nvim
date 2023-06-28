@@ -1,7 +1,7 @@
 # Neovim Config
 1. [Packer](#packer)
 2. [Meson](#meson)
-3. [Autocomplation](#auto complation)
+3. [Auto complation](#autocomplation)
 
 ## Packer
 - Installation
