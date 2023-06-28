@@ -60,4 +60,30 @@ vim.keymap.set("n", "<leader><leader>", function()
 -- | vim.keymap.set("n", "<leader>P", "+P")
 -- | vim.keymap.set("n", "<leader>p", "+p")
 -- | vim.keymap.set("n", "<leader>P", "+P")
+
+-- gor from:
+-- https://github.com/dreamsofcode-io/neovim-python.git
+
+local M = {}
+
+M.dap = {
+  plugin = true,
+  n = {
+    ["<leader>db"] = {"<cmd> DapToggleBreakpoint <CR>"}
+  }
+}
+
+M.dap_python = {
+  plugin = true,
+  n = {
+    ["<leader>dpr"] = {
+      function()
+        require('dap-python').test_method()
+      end
+    }
+  }
+}
+
+return M
+
 end)
