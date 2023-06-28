@@ -2,6 +2,7 @@
 Install the packer first to make `:PackerSync` easy
 
 ## Prerequisite
+- Packer
 > Unix, Linux Installation
 
 ```shell
