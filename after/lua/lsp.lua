@@ -1,7 +1,4 @@
 local lsp = require("lsp-zero")
---> gini
--->local pyright_opts = require("custom.lua.pyright.lua")
---> error karena belum ada pyright.lua di foleder custom/lua/
 --> I thought it will use the pyrright but it show error :)
 -- ==> local lsp = require("pyright")
 
@@ -24,6 +21,20 @@ lsp.configure('lua-language-server', {
         }
     }
 })
+
+
+-- local config = require("lsp")
+
+-- local on_attach = config.on_attach
+-- local capabilities = config.capabilities
+
+-- local lsp = require("lsp")
+
+-- lsp.pyright.setup({
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   filetypes = {"python"},
+-- })
 
 
 local cmp = require('cmp')
