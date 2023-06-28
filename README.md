@@ -21,4 +21,4 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 Open the packer file `:so` -> `:PackerSync`
 
 
-See [Tree Configuration](https://github.com/activeagle/nvim/nvim-tree-lua.txt)
+See [Tree Configuration](https://github.com/activeagle/nvim/blob/main/nvim-tree-lua.txt)
