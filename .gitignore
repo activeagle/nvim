@@ -1,5 +1,2 @@
-# nothing
-# after/
-# lua/
-# plugin/
-sysinit.vim
+plugin/packer_compiled.lua
+

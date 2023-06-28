@@ -1,40 +1,14 @@
 local lsp = require("lsp-zero")
---> I thought it will use the pyrright but it show error :)
--- ==> local lsp = require("pyright")
 
 lsp.preset("recommended")
 
 lsp.ensure_installed({
- 'tsserver', --> javascript
-  'rust_analyzer', --> rust
-  'gopls', --> go
-  'pyright', --> python
+  'tsserver',
+  'rust_analyzer',
 })
 
 -- Fix Undefined global 'vim'
-lsp.configure('lua-language-server', {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-})
-
-
--- local config = require("lsp")
-
--- local on_attach = config.on_attach
--- local capabilities = config.capabilities
-
--- local lsp = require("lsp")
-
--- lsp.pyright.setup({
---   on_attach = on_attach,
---   capabilities = capabilities,
---   filetypes = {"python"},
--- })
+lsp.nvim_workspace()
 
 
 local cmp = require('cmp')
@@ -78,4 +52,9 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
---> sp.setup()
+lsp.setup()
+
+vim.diagnostic.config({
+    virtual_text = true
+})
+
