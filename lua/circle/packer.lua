@@ -4,9 +4,10 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- "I add this" Packer can manage itself
+  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToogle)
+
+  vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToogle)
 
 
   use {
