@@ -1,8 +1,7 @@
 # Neovim Config
 
 ## Prerequisite
-Install
-> Unix, Linux Installation
+### > Unix, Linux Installation
 
 ```shell
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
@@ -12,7 +11,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 If you use Arch Linux, there is also [an AUR
 package](https://aur.archlinux.org/packages/nvim-packer-git/).
 
-> Windows Powershell Installation
+### > Windows Powershell Installation
 
 ```shell
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
