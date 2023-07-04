@@ -20,5 +20,11 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 - Configuration
 Open the packer file `:so` -> `:PackerSync`
 
+> Install npm
+```shell
+sudo pacman -S npm
+```
+
+
 
 See [Tree Configuration](https://github.com/activeagle/nvim/blob/main/nvim-tree-lua.txt)
