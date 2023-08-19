@@ -22,7 +22,7 @@ require("nvim-tree").setup({
   },
 })
 
--- Donw this is the customize 
+-- Donw this is the customize
 require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
       auto_reload_on_write = true,
       disable_netrw = false,
@@ -36,7 +36,7 @@ require("nvim-tree").setup { -- BEGIN_DEFAULT_OPTS
       reload_on_bufenter = false,
       respect_buf_cwd = false,
       on_attach = "default",
-      remove_keymaps = false,
+      --remove_keymaps = true,
       select_prompts = false,
       view = {
         centralize_selection = false,
